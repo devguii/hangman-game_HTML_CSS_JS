@@ -1,10 +1,17 @@
 const words = ["apple", "banana", "lemon"];
+let invalidLetters = [];
+let palavra;
+const maxAttempts = 5;
+let errors = 0;
+let keyboardListener;
 
 const start = () => {
   randomWord = shuffleWord();
 
   for (let i = 0; i < randomWord.length; i++) {
-    document.getElementById("word").appendChild(createTextInput(randomWord[i]));
+    document
+      .getElementById("word-area")
+      .appendChild(createTextInput(randomWord[i]));
   }
 };
 
