@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,15 +7,18 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <header>
+      <h1>HangMan-Game</h1>
+    </header>
     <div id="main-section" class="main-section">
-      <h1>Hangman-game</h1>
       <div id="word-area" class="word-area"></div>
       <p id="attempts"></p>
       <p id="invalid"></p>
-      <div id="button-section" class="button-section"></div>
-
+    </div>
+    <div id="button-section" class="button-section">
       <button id="btnStart" class="btnStart" onclick="start()">Start</button>
     </div>
+   
     <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
